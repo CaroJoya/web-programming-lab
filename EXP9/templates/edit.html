@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Profile</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+<div class="container">
+    <h1>✏️ Edit Profile</h1>
+    <form name="myForm" action="/update/{{ profile['id'] }}" method="POST" onsubmit="return validateForm()">
+        <input type="text" name="name" placeholder="Your Name" value="{{ profile['name'] }}">
+        <br>
+        <input type="text" name="skill" placeholder="Favorite Skill" value="{{ profile['skill'] }}">
+        <br>
+        <input type="text" name="hobby" placeholder="Your Hobby" value="{{ profile['hobby'] }}">
+        <br>
+        <input type="text" name="goal" placeholder="Your Goal" value="{{ profile['goal'] }}">
+        <br>
+        <input type="text" name="favorite_language" placeholder="Favorite Language" value="{{ profile['favorite_language'] }}">
+        <br>
+        <input type="text" name="strength" placeholder="Your Strength" value="{{ profile['strength'] }}">
+        <br>
+        <input type="text" name="favorite_food" placeholder="Favorite Food" value="{{ profile['favorite_food'] }}">
+        <br>
+        <button type="submit">💾 Save Changes</button>
+        <a href="/view" class="cancel-btn">❌ Cancel</a>
+    </form>
+</div>
+</body>
+</html>

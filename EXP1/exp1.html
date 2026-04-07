@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Basics Demonstration">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML All Tags Demo</title>
+</head>
+
+<body bgcolor="#f0f4f8">
+
+<header align="center">
+    <h1>HTML Tags Demonstration</h1>
+    <p><b>HTML</b> is used to create <i>web pages</i>.</p>
+</header>
+
+<hr>
+
+<nav align="center">
+    <a href="#">Lists</a> | 
+    <a href="#">Table</a> | 
+    <a href="#">Media</a> | 
+    <a href="#">Form</a>  |
+    <a href="#">About</a>
+</nav>
+
+<hr>
+
+<div class="sections-grid">
+    <section id="lists">
+        <h2>Lists</h2>
+    
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Swift</li>
+        </ul>
+    
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Create HTML file</li>
+            <li>Add content</li>
+            <li>Link webpages</li>
+            <li>Apply CSS</li>
+            <li>Run in browser</li>
+        </ol>
+    
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Markup language for web pages</dd>
+        </dl>
+    </section>
+    
+    <section id="table">
+        <h2>Table</h2>
+        <table border="1" cellpadding="10" cellspacing="0" align="center" width="60%">
+            <caption><b>Student Information</b></caption>
+            <tr bgcolor="#dbeafe">
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td align="center">1</td>
+                <td align="center">XYZ</td>
+                <td align="center">Computer</td>
+                <td align="center">xyz@gmail.com</td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td align="center">PQR</td>
+                <td align="center">Computer</td>
+                <td align="center">pqr@gmail.com</td>
+            </tr>
+            <tr>
+                <td align="center">3</td>
+                <td align="center">ABC</td>
+                <td align="center">IT</td>
+                <td align="center">abc@gmail.com</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="media">
+        <h2>Image and Link</h2>
+        <center>
+            <img src="https://www.usnews.com/dims4/USNEWS/0fdf1e3/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F60%2Fd3%2Fdaf345344ba58e9da6575a6b6436%2Fburton-aerial.jpg" alt="Sample Image" border="2" hspace="10" vspace="10">
+            <br>
+            <a href="https://www.w3schools.com" target="_blank">Learn HTML</a>
+        </center>
+    </section>
+    
+    <section id="form">
+        <h2>Form</h2>
+        <form align="center">
+            <fieldset>
+                <legend><b>Registration Form</b></legend>
+                Name:
+                <input type="text" placeholder="Enter name" required>
+                <br><br>
+                Email:
+                <input type="email" required>
+                <br><br>
+                Password:
+                <input type="password">
+                <br><br>
+                Gender:
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <br><br>
+                Course:
+                <select>
+                    <option>Computer</option>
+                    <option>IT</option>
+                    <option>AIDS</option>
+                </select>
+                <br><br>
+                Skills:
+                <input type="checkbox"> HTML
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JS
+                <br><br>
+                <input type="submit" value="Register">
+                <input type="reset">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                <br><br>
+    
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Enter your feedback"></textarea>
+                <br><br>
+            </fieldset>
+        </form>
+    </section>
+</div>
+
+<section id="about">
+    <h2>Importance of HTML</h2>
+    <p>HTML will very certainly serve as the basis of your website, regardless of the platform you choose. 
+        When used correctly, it specifies the headers, paragraphs, subheadings, pictures, and other components that appear across your website.</p>
+    <p>A more excellent grasp of HTML will provide you with the knowledge and abilities to correct any minor content-related problems that may arise.
+         In addition, you'll be able to make fast and simple changes to your unique design.
+         As a result, there are many resources available to you to learn the fundamentals of HTML in a stress-free atmosphere.</p>
+</section>
+
+<footer align="center">
+    <p>&copy; 2026 Web Programming Lab</p>
+</footer>
+
+</body>
+</html>
