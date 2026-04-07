@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+<div class="container">
+<h1>About Me Questionnaire ✨</h1>
+<form name="myForm" action="/submit" method="POST" onsubmit="return validateForm()">
+<input type="text" name="name" placeholder="Your Name" required>
+<br>
+<input type="text" name="skill" placeholder="Your Favorite Skill">
+<br>
+<input type="text" name="hobby" placeholder="Your Hobby">
+<br>
+<input type="text" name="goal" placeholder="Your Goal in Life">
+<br>
+<input type="text" name="favorite_language" placeholder="Your Favorite Programming Language">
+<br>
+<input type="text" name="strength" placeholder="Your Greatest Strength">
+<br>
+<input type="text" name="favorite_food" placeholder="Your Favorite Food">
+<br>
+<button type="submit">Generate Profile</button>
+</form>
+<br>
+<a href="/view">View All Profiles</a>
+</div>
+</body>
+</html>
